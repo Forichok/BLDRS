@@ -1,8 +1,10 @@
 import React from 'react';
 import Home from './Containers/Home';
+import Team from './Containers/Team';
 import { ThemeProvider } from '@mui/material/styles';
 
 import { createTheme } from '@mui/material/styles';
+import { flexbox } from '@mui/system';
 
 let theme = createTheme({
   palette: {
@@ -17,9 +19,12 @@ let theme = createTheme({
 
 function App() {
   return (
-    <div>
+    <div style={{}}>
       <ThemeProvider theme={theme}>
-        <Home />
+        <div>
+          <Home />
+          <Team />
+        </div>
       </ThemeProvider>
     </div>
   );
