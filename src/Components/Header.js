@@ -3,7 +3,7 @@ import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import { makeStyles } from '@mui/styles';
 import { ReactComponent as Bldrs } from '../assets/bldrs.svg';
-import { ReactComponent as Menu } from '../assets/menu.svg';
+import { ReactComponent as Viewer } from '../assets/viewer.svg';
 
 const useStyles = makeStyles({
   toolBar: {
@@ -22,7 +22,8 @@ const useStyles = makeStyles({
   menu: {
     height: 40,
     position: 'relative',
-    left: 25,
+    left: 5,
+    bottom: 5,
     '@media (max-width: 780px)': { position: 'relative', left: 22 },
   },
 });
@@ -38,7 +39,7 @@ const Header = ({ onClickIcon }) => {
         component='span'
         onClick={onClickIcon}
       >
-        <Menu className={classes.menu} />
+        <Viewer className={classes.menu} />
       </IconButton>
     </Toolbar>
   );

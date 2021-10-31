@@ -2,100 +2,69 @@ import React from 'react';
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles({
-  pageWrapper: {
-    width: '100%',
-    height: '700px',
-    '@media (max-width: 780px)': {
-      height: 870,
-      overflowX: 'hidden',
-      position: 'relative',
-    },
-  },
-  mission: {
-    // width: '100%',
+  container: {
     display: 'flex',
-    justifyContent: 'flex-start',
-    fontSize: 64,
-    fontFamily: 'Helvetica',
-    fontWeight: 'bold',
-    textTransform: 'uppercase',
-    letterSpacing: '-1px',
-    marginTop: 140,
-    marginLeft: 30,
+    flexDirection: 'column',
     '@media (max-width: 780px)': {
-      marginTop: 50,
-      marginLeft: 0,
-      fontSize: 50,
-      display: 'flex',
-      justifyContent: 'center',
-      paddingLeft: 20,
+      flexDirection: 'row',
+      justifyContent: 'space-around',
+      alignContent: 'center',
+      marginBottom: 20,
     },
   },
-  statementWrapper: {
-    marginTop: 100,
-    // marginLeft: 30,
-    display: 'flex',
-    justifyContent: 'flex-start',
-    '@media (max-width: 780px)': {
-      marginLeft: 20,
-      marginTop: 60,
-    },
-  },
-  statement: {
-    width: '95%',
-    maxWidth: 950,
-    backgroundColor: 'lightgray',
-    fontSize: 24,
-    color: 'black',
-    fontFamily: 'Helvetica',
-    fontWeight: 'bold',
-    textTransform: 'uppercase',
-    padding: '20px 20px',
-    letterSpacing: '1px',
-    '@media (max-width: 780px)': {
-      fontSize: 20,
-      letterSpacing: '0px',
-      padding: '20px 20px',
-      width: '90%',
-      maxWidth: '84%',
-    },
-  },
+
   image: {
     width: 200,
     height: 200,
     backgroundColor: 'grey',
     borderRadius: '50%',
+    '@media (max-width: 780px)': {
+      width: 100,
+      height: 100,
+    },
+  },
+  name: {
+    marginTop: 20,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    fontSize: 20,
+    fontFamily: 'Helvetica',
+    fontWeight: 'bold',
+    color: 'black',
+  },
+  bio: {
+    marginTop: 20,
+    display: 'flex',
+    width: 180,
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    fontSize: 16,
+    fontFamily: 'Helvetica',
+    fontWeight: 'bold',
+    background: 'black',
+    color: 'white',
+    padding: '10px 0px 12px 12px',
+    '@media (max-width: 780px)': {
+      fontSize: 12,
+      marginTop: 0,
+      width: 180,
+      height: 120,
+      padding: '10px 4px 4px 12px',
+    },
   },
 });
 
 const Bio = ({ name, bio, image }) => {
   const classes = useStyles();
   return (
-    <div>
-      <img src={image} className={classes.image} />
-      <div
-        style={{
-          marginTop: 20,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          border: '1px solid red',
-        }}
-      >
-        {name}
+    <div className={classes.container}>
+      <div>
+        <img src={image} className={classes.image} />
+        <div className={classes.name}>{name}</div>
       </div>
-      <div
-        style={{
-          marginTop: 20,
-          display: 'flex',
-          width: 200,
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-          border: '1px solid red',
-        }}
-      >
-        {bio}
-      </div>
+
+      <div className={classes.bio}>{bio}</div>
     </div>
   );
 };
