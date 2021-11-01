@@ -87,9 +87,6 @@ const useStyles = makeStyles({
 const Team = () => {
   const classes = useStyles();
   const [sideMenu, setSideMenu] = useState(false);
-  const onClickIcon = () => {
-    setSideMenu(!sideMenu);
-  };
   return (
     <div className={classes.pageContainer}>
       {/* <div className={classes.title}>Team</div> */}
