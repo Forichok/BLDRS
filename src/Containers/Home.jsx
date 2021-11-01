@@ -6,11 +6,10 @@ const useStyles = makeStyles({
   pageWrapper: {
     height: '800px',
     '@media (max-width: 780px)': {
-      height: 1000,
+      height: 900,
       overflowX: 'hidden',
       overflowY: 'hidden',
       position: 'relative',
-      // border: '1px solid red',
     },
   },
   mission: {
@@ -34,7 +33,6 @@ const useStyles = makeStyles({
   },
   statementWrapper: {
     marginTop: 80,
-    marginLeft: 30,
     display: 'flex',
     justifyContent: 'center',
     '@media (max-width: 780px)': {

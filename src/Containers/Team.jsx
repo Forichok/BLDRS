@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@mui/styles';
 import pablo from '../assets/pablo.png';
-import pablo2 from '../assets/pablo2.png';
-import oleg from '../assets/oleg.png';
-import markus from '../assets/markus.png';
+import placeholder from '../assets/person.png';
 
 import Bio from '../Components/Bio';
 
@@ -17,10 +15,9 @@ const useStyles = makeStyles({
     alignContent: 'center',
     paddingBottom: '100px',
     '@media (max-width: 780px)': {
-      height: 1000,
+      height: 900,
       overflowX: 'hidden',
       position: 'relative',
-      // border: '1px solid blue',
     },
   },
   title: {
@@ -57,7 +54,7 @@ const useStyles = makeStyles({
     flexDirection: 'row',
     justifyContent: 'space-between',
     '@media (max-width: 780px)': {
-      marginTop: 50,
+      marginTop: 0,
       width: 1000,
       display: 'flex',
       flexDirection: 'column',
@@ -78,10 +75,11 @@ const useStyles = makeStyles({
     textDecoration: 'underline',
     cursor: 'pointer',
     '@media (max-width: 780px)': {
+      marginTop: 20,
       fontSize: 32,
-      justifyContent: 'flex-start',
-      marginLeft: 20,
-      marginBottom: 90,
+      justifyContent: 'center',
+      marginLeft: 0,
+      marginBottom: 10,
     },
   },
 });
@@ -105,14 +103,14 @@ const Team = () => {
             }
           />
           <Bio
-            image={pablo2}
+            image={placeholder}
             name={'Kate'}
             bio={
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut'
             }
           />
           <Bio
-            image={markus}
+            image={placeholder}
             name={'Markus'}
             bio={
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut'
@@ -120,7 +118,7 @@ const Team = () => {
             ß
           />
           <Bio
-            image={pablo2}
+            image={placeholder}
             name={'Oleg'}
             bio={
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut'

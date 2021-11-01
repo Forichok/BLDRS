@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   image: {
     width: 200,
     height: 200,
-    backgroundColor: 'grey',
+    backgroundColor: 'white',
     borderRadius: '50%',
     '@media (max-width: 780px)': {
       width: 100,

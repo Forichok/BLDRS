@@ -24,7 +24,7 @@ const useStyles = makeStyles({
     position: 'relative',
     left: 5,
     bottom: 5,
-    '@media (max-width: 780px)': { position: 'relative', left: 22 },
+    '@media (max-width: 780px)': { position: 'relative', left: 0, bottom: 0 },
   },
 });
 
