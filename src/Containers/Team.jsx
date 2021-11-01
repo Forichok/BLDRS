@@ -15,9 +15,11 @@ const useStyles = makeStyles({
     alignContent: 'center',
     paddingBottom: '100px',
     '@media (max-width: 780px)': {
-      height: 900,
+      // height: 900,
+      height: '100%',
       overflowX: 'hidden',
       position: 'relative',
+      border: '1px solid blue',
     },
   },
   title: {
@@ -54,8 +56,9 @@ const useStyles = makeStyles({
     flexDirection: 'row',
     justifyContent: 'space-between',
     '@media (max-width: 780px)': {
-      marginTop: 0,
-      width: 1000,
+      marginTop: 40,
+      width: '100%',
+      border: '1px solid blue',
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
@@ -75,11 +78,11 @@ const useStyles = makeStyles({
     textDecoration: 'underline',
     cursor: 'pointer',
     '@media (max-width: 780px)': {
-      marginTop: 20,
+      // marginTop: 20,
       fontSize: 32,
       justifyContent: 'center',
       marginLeft: 0,
-      marginBottom: 10,
+      // marginBottom: 10,
     },
   },
 });

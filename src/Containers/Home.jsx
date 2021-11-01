@@ -6,7 +6,7 @@ const useStyles = makeStyles({
   pageWrapper: {
     height: '800px',
     '@media (max-width: 780px)': {
-      height: 900,
+      height: '100%',
       overflowX: 'hidden',
       overflowY: 'hidden',
       position: 'relative',
