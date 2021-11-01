@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/BLDRS/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/BLDRS/static/js/main.b83b92c9.chunk.js",
+    "main.js.map": "/BLDRS/static/js/main.b83b92c9.chunk.js.map",
+    "runtime-main.js": "/BLDRS/static/js/runtime-main.55378995.js",
+    "runtime-main.js.map": "/BLDRS/static/js/runtime-main.55378995.js.map",
+    "static/js/2.d8bca663.chunk.js": "/BLDRS/static/js/2.d8bca663.chunk.js",
+    "static/js/2.d8bca663.chunk.js.map": "/BLDRS/static/js/2.d8bca663.chunk.js.map",
+    "static/js/3.73ce22b5.chunk.js": "/BLDRS/static/js/3.73ce22b5.chunk.js",
+    "static/js/3.73ce22b5.chunk.js.map": "/BLDRS/static/js/3.73ce22b5.chunk.js.map",
+    "index.html": "/BLDRS/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/BLDRS/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.d8bca663.chunk.js.LICENSE.txt": "/BLDRS/static/js/2.d8bca663.chunk.js.LICENSE.txt",
+    "static/media/bldrs.22763953.svg": "/BLDRS/static/media/bldrs.22763953.svg",
+    "static/media/pablo.349c7bcf.png": "/BLDRS/static/media/pablo.349c7bcf.png",
+    "static/media/person.79665091.png": "/BLDRS/static/media/person.79665091.png",
+    "static/media/viewer.4b87eea6.svg": "/BLDRS/static/media/viewer.4b87eea6.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.55378995.js",
+    "static/js/2.d8bca663.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.b83b92c9.chunk.js"
+  ]
+}
